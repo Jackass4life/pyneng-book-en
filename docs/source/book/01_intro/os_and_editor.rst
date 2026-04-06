@@ -1,7 +1,7 @@
 OS and editor
 =============
 
-You can choose any OS and any editor but it is better to use Python version 3.7
+You can choose any OS and any editor but it is better to use Python version 3.10
 because book uses this version.  All examples in book were run on Debian, other
 operating systems may have a slightly different output. You can use Linux,
 macOS or Windows to perform tasks from a book.

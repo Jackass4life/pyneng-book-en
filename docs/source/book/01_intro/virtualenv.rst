@@ -24,13 +24,13 @@ Installing virtualenvwrapper with pip:
 
 ::
 
-    $ sudo pip3.7 install virtualenvwrapper
+    $ sudo pip3.10 install virtualenvwrapper
 
 After installation, in . bashrc file in current user's home folder, you need to add several lines:
 
 ::
 
-    export VIRTUALENVWRAPPER_PYTHON=/usr/local/bin/python3.7
+    export VIRTUALENVWRAPPER_PYTHON=/usr/local/bin/python3.10
     export WORKON_HOME=~/venv
     . /usr/local/bin/virtualenvwrapper.sh
 
@@ -54,11 +54,11 @@ Overflow <http://stackoverflow.com/questions/2518127/how-do-i-reload-bashrc-with
 Working with virtual environments
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Creating a new virtual environment in which Python 3.7 is used by default:
+Creating a new virtual environment in which Python 3.10 is used by default:
 
 ::
 
-    $ mkvirtualenv --python=/usr/local/bin/python3.7 pyneng
+    $ mkvirtualenv --python=/usr/local/bin/python3.10 pyneng
     New python executable in PyNEng/bin/python
     Installing distribute........................done.
     Installing pip...............done.
@@ -145,10 +145,10 @@ Starting from version 3.5, it is recommended that Python use venv to create virt
 
 ::
 
-    $ python3.7 -m venv new/pyneng
+    $ python3.10 -m venv new/pyneng
 
-Python or python3 can be used instead of python 3.7, depending on how
-Python 3.7 is installed. This command creates specified directory and all
+Python or python3 can be used instead of python 3.10, depending on how
+Python 3.10 is installed. This command creates specified directory and all
 necessary subdirectories within it if they have not been created.
 
 Command creates the following directory structure:
@@ -196,7 +196,7 @@ If you open Python interpreter and import simplejson, it is available and there 
     (pyneng)$ python
     >>> import simplejson
     >>> simplejson
-    <module 'simplejson' from '/home/vagrant/venv/pyneng-py3-7/lib/python3.7/site-packages/simplejson/__init__.py'>
+    <module 'simplejson' from '/home/vagrant/venv/pyneng-py3-10/lib/python3.10/site-packages/simplejson/__init__.py'>
     >>>
 
 But if you exit from virtual environment and try to do the same thing, there is no such module:

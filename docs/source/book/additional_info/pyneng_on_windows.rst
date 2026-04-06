@@ -9,11 +9,11 @@ Preparing Windows
 
 In order to do tasks on Windows, you need to install Python and Cmder.
 
-Installing Python 3.7
+Installing Python 3.10
 ---------------------
 
-Download and install `Python 3.7 <https://www.python.org/downloads/release/python-377/>`__.
-Be sure to check the "Add Python 3.7 to PATH" checkbox.
+Download and install `Python 3.10 <https://www.python.org/downloads/release/python-31012/>`__.
+Be sure to check the "Add Python 3.10 to PATH" checkbox.
 
 After installation, check:
 
@@ -21,13 +21,7 @@ After installation, check:
 
     python --version
 
-The output should be: ``Python 3.7.7``
-
-.. note::
-
-    If you are not going to use the Mu editor, you can install 3.8 as well, but it
-    is better to look at Mu first. For the basic topics covered in the course, there
-    are practically no changes in 3.8, so you can safely use Python 3.7.
+The output should be: ``Python 3.10.12``
 
 
 Cmder
