@@ -155,7 +155,7 @@ In the case of example above, you have to call a command:
 
     $ pytest check_ip_functions.py
     ========================= test session starts ==========================
-    platform linux -- Python 3.10.12, pytest-7.4.0, py-1.11.0, pluggy-1.2.0
+    platform linux -- Python 3.12.0, pytest-7.4.0, py-1.11.0, pluggy-1.2.0
     rootdir: /home/vagrant/repos/general/pyneng.github.io/code_examples/pytest
     collected 1 item
 
@@ -176,7 +176,7 @@ execution will look like:
 
     $ pytest check_ip_functions.py
     ========================= test session starts ==========================
-    platform linux -- Python 3.10.12, pytest-7.4.0, py-1.11.0, pluggy-1.2.0
+    platform linux -- Python 3.12.0, pytest-7.4.0, py-1.11.0, pluggy-1.2.0
     rootdir: /home/vagrant/repos/general/pyneng.github.io/code_examples/pytest
     collected 1 item
 
@@ -242,7 +242,7 @@ In that case, test can be run without specifying a file:
 
     $ pytest
     ================= test session starts ========================
-    platform linux -- Python 3.10.12, pytest-7.4.0, py-1.11.0, pluggy-1.2.0
+    platform linux -- Python 3.12.0, pytest-7.4.0, py-1.11.0, pluggy-1.2.0
     rootdir: /home/vagrant/repos/general/pyneng.github.io/code_examples/pytest
     collected 1 item
 

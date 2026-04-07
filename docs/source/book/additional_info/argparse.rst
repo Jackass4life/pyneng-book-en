@@ -222,7 +222,7 @@ Set IP address as a positional argument (ping_function_ver2.py file):
 
 Now instead of giving ``-a`` option you can simply pass IP address. 
 It will be automatically saved in ``host`` variable.
-And it's automatically considered as a mandatory. Тhat is, it is no longer
+And it's automatically considered as a mandatory. That is, it is no longer
 necessary to specify ``required=True`` and ``dest="ip"``.
 
 In addition, script specifies messages that will be displayed when

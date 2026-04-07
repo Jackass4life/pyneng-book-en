@@ -187,7 +187,7 @@ Pipe symbol works like 'or':
     In [26]: re.search('Fast|0/1', line).group()
     Out[26]: 'Fast'
 
-Note how ``|`` works - Fast и 0/1 are treated as an whole expression.
+Note how ``|`` works - Fast and 0/1 are treated as a whole expression.
 So in the end, expression means that we're looking for Fast or 0/1.
 
 ``()``

@@ -1,48 +1,50 @@
-аргумент
+Glossary
+========
+
+argument
 --------
 
-Аргумент - это фактическое значение (данные), которое передается функции
-(или методу), при вызове.
+An argument is the actual value (data) that is passed to a function
+(or method) when it is called.
 
-атрибут
--------
+attribute
+---------
 
-итератор
+An attribute is a variable associated with an object. Attributes store
+the state of an object and are accessed using dot notation.
+
+iterator
 --------
 
-Итератор (iterator) - это объект, который возвращает свои элементы по
-одному за раз.
+An iterator is an object that returns its elements one at a time.
 
-С точки зрения Python, это любой объект, у которого есть метод
-``__next__``. Этот метод возвращает следующий элемент, если он есть или
-возвращает исключение StopIteration, когда элементы закончились.
+From Python's perspective, it is any object that has a ``__next__``
+method. This method returns the next element if it exists, or raises a
+StopIteration exception when there are no more elements.
 
-Кроме того, итератор запоминает на каком объекте он остановился в
-последнюю итерацию.
+In addition, an iterator remembers which element it stopped at in the
+last iteration.
 
-В Python у каждого итератора присутствует метод ``__iter__`` - то есть,
-любой итератор является итерируемым объектом из которого можно поулчить
-итератор. Этот метод просто возвращает сам итератор.
+In Python, every iterator has an ``__iter__`` method — that is, any
+iterator is an iterable from which an iterator can be obtained. This
+method simply returns the iterator itself.
 
-Подробнее об итераторах.
+iteration
+---------
 
-итерация
+Iteration is a general term that describes the procedure of taking
+elements of something one at a time.
+
+More generally, it is a sequence of instructions that is repeated a
+certain number of times or until a specified condition is met.
+
+iterable
 --------
 
-Итерация - общий термин, который описывает процедуру взятия элементов
-чего-то по очереди.
+An iterable is an object from which an iterator can be obtained.
 
-В более общем смысле, это последовательность инструкций, которая
-повторяется определенное количество раз или до выполнения указанного
-условия.
-
-итерируемый объект
-------------------
-
-Итерируемый объект (iterable) - это объект из которого можно получить
-итератор.
-
-В Python за получение итератора отвечает функция iter():
+In Python, the ``iter()`` function is responsible for obtaining an
+iterator:
 
 .. code:: python
 
@@ -51,35 +53,34 @@
     In [2]: iter(lista)
     Out[2]: <list_iterator at 0xb4ede28c>
 
-Функция iter() отработает на любом объекте у которого есть метод
-``__iter__`` или метод ``__getitem__``.
+The ``iter()`` function works on any object that has an ``__iter__``
+method or a ``__getitem__`` method.
 
-Метод ``__iter__`` возвращает итератор. Но, если этого метода нет,
-функция iter() проверяет нет ли метода ``__getitem__`` - метод, который
-позволяет получать элементы по индексу.
+The ``__iter__`` method returns an iterator. But if this method is
+absent, ``iter()`` checks whether there is a ``__getitem__`` method —
+a method that allows elements to be obtained by index.
 
-Если метод ``__getitem__`` есть, возвращается итератор, который
-проходится по элементам используя индекс (начиная с 0).
+If the ``__getitem__`` method is present, an iterator is returned that
+traverses the elements using an index (starting from 0).
 
-На практике, использование метода ``__getitem__`` означает, что все
-последовательности элементов - это итерируемые объекты. Например,
-список, кортеж, строка.
+In practice, the presence of ``__getitem__`` means that all sequences
+of elements are iterables — for example, list, tuple, string.
 
-метод
------
+method
+------
 
-Метод - это функция, которая относится к конкретному объекту. И
-соответственно вызывается применимо к объекту.
+A method is a function that belongs to a specific object, and is
+accordingly called in relation to that object.
 
-Например, print - это функция:
+For example, ``print`` is a function:
 
 .. code:: python
 
     In [11]: print('test')
     test
 
-А append - это метод списка. Соответственно его можно вызывать только
-применимо к объекту который является списком:
+While ``append`` is a list method. Accordingly it can only be called
+on an object that is a list:
 
 .. code:: python
 
@@ -87,15 +88,15 @@
 
     In [13]: list1.append(4)
 
-объект
+object
 ------
 
-В Python все является объектом. Официальное определение - это сущность у
-которой есть какое-то состояние и определенное поведение.
+In Python, everything is an object. The official definition is an entity
+that has some state and certain behaviour.
 
-Примеры объектов: список, строка, файл и так далее.
+Examples of objects: list, string, file, and so on.
 
-Например, таким образом можно создать объект файл:
+For example, a file object can be created like this:
 
 .. code:: python
 
@@ -104,35 +105,35 @@
     In [2]: f
     Out[2]: <_io.TextIOWrapper name='output.py' mode='r' encoding='UTF-8'>
 
-У этого объекта есть такие методы и атрибуты:
+This object has the following methods and attributes:
 
 .. code:: python
 
     In [3]: print([m for m in dir(f) if not m.startswith('_')])
     ['buffer', 'close', 'closed', 'detach', 'encoding', 'errors', 'fileno', 'flush', 'isatty', 'line_buffering', 'mode', 'name', 'newlines', 'read', 'readable', 'readline', 'readlines', 'seek', 'seekable', 'tell', 'truncate', 'writable', 'write', 'writelines']
 
-Объект f в данном случае, представляет реальный файл output.py. И
-содержит методы и атрибуты, которые поддерживает Python по отношению к
-файлам.
+The object ``f`` here represents the actual file output.py, and
+contains the methods and attributes that Python supports for files.
 
-параметр
+parameter
+---------
+
+A parameter is a variable used when defining a function.
+
+sequence
 --------
 
-Параметр - это переменная, которая используется, при создании функции.
+A sequence is an ordered collection of elements that supports index-based
+access and has a defined length. Examples: list, tuple, string.
 
-последовательность
-------------------
+function
+--------
 
-Последовательность (sequence) -
+A function is a block of code that returns a value. A function can also
+accept arguments that affect the execution of the code in the function
+body.
 
-функция
--------
-
-Функция - блок кода, который возвращает какое-то значение. Функция также
-может принимать аргументы, которые влияют на выполнение кода в теле
-функции.
-
-Пример функции:
+Example function:
 
 .. code:: python
 
@@ -140,10 +141,11 @@
         ...:     return a+b
         ...:
 
-У функции f два параметра - a и b. Она возвращает сумму этих параметров.
+Function ``f`` has two parameters — ``a`` and ``b``. It returns the sum
+of these parameters.
 
-При вызове функции с аргументами 5 и 10, она возвращает результат 15,
-который присваивается в переменную result:
+When called with arguments 5 and 10, it returns 15, which is assigned to
+the variable ``result``:
 
 .. code:: python
 
@@ -151,4 +153,3 @@
 
     In [16]: result
     Out[16]: 15
-

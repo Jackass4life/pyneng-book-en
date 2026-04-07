@@ -25,5 +25,6 @@ written code and not copy it (for example, do not copy a previously written func
    import
    create
    if_name_main
+   module_search
    further_reading
    ../../exercises/11_exercises

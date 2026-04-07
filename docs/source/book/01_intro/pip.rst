@@ -10,7 +10,7 @@ Check pip version:
 ::
 
     $ pip --version
-    pip 23.2.1 from /home/vagrant/venv/pyneng-py3-10/lib/python3.10/site-packages/pip (python 3.10)
+    pip 23.2.1 from /home/vagrant/venv/pyneng-py3-10/lib/python3.12/site-packages/pip (python 3.12)
 
 
 If command failed, pip is not installed. Pip installation is described in `documentation <https://pip.pypa.io/en/stable/installing/>`__
@@ -55,7 +55,7 @@ A version where pip3 corresponds to 3.10:
 ::
 
     $ pip3 --version
-    pip 23.2.1 from /home/vagrant/venv/pyneng-py3-10/lib/python3.10/site-packages/pip (python 3.10)
+    pip 23.2.1 from /home/vagrant/venv/pyneng-py3-10/lib/python3.12/site-packages/pip (python 3.12)
 
 
 If system uses pip3, then every time a Python module is installed in book it
@@ -65,6 +65,6 @@ Alternatively, call pip:
 
 ::
 
-    $ python3.10 -m pip install tabulate
+    $ python3.12 -m pip install tabulate
 
 Thus, it is always clear for which version of Python the package is installed.

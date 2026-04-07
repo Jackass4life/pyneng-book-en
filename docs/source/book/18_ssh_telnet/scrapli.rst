@@ -140,7 +140,7 @@ Using the driver
 Available drivers
 
 +------------------+--------------+-------------------+
-| Network equipment| Драйвер      | Параметр platform |
+| Network equipment| Driver       | Platform parameter |
 +==================+==============+===================+
 | Cisco IOS-XE     | IOSXEDriver  | cisco_iosxe       |
 +------------------+--------------+-------------------+

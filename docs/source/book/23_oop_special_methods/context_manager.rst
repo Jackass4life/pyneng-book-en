@@ -68,7 +68,7 @@ add methods ``__enter__`` and ``__exit__``:
 
     class CiscoSSH:
         def __init__(self, ip, username, password, enable, disable_paging=True):
-            print('Метод __init__')
+            print('Method __init__')
             client = paramiko.SSHClient()
             client.set_missing_host_key_policy(paramiko.AutoAddPolicy())
 
@@ -88,11 +88,11 @@ add methods ``__enter__`` and ``__exit__``:
             self.ssh.recv(1000)
 
         def __enter__(self):
-            print('Метод __enter__')
+            print('Method __enter__')
             return self
 
         def __exit__(self, exc_type, exc_value, traceback):
-            print('Метод __exit__')
+            print('Method __exit__')
             self.ssh.close()
 
         def send_show_command(self, command):
@@ -108,12 +108,12 @@ Example of class usage in context manager:
     In [14]: with CiscoSSH('192.168.100.1', 'cisco', 'cisco', 'cisco') as r1:
         ...:     print(r1.send_show_command('sh clock'))
         ...:
-    Метод __init__
-    Метод __enter__
+    Method __init__
+    Method __enter__
     sh clock
     *13:05:50.677 UTC Sun Jul 28 2019
     R1#
-    Метод __exit__
+    Method __exit__
 
 Even if an exception occurs within block, ``__exit__`` method is executed:
 
@@ -123,9 +123,9 @@ Even if an exception occurs within block, ``__exit__`` method is executed:
         ...:     result = r1.send_show_command('sh clock')
         ...:     result / 2
         ...:
-    Метод __init__
-    Метод __enter__
-    Метод __exit__
+    Method __init__
+    Method __enter__
+    Method __exit__
     ---------------------------------------------------------------------------
     TypeError                                 Traceback (most recent call last)
     <ipython-input-18-b9ff1fa74be2> in <module>

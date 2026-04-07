@@ -15,7 +15,7 @@ as an example, but of course they apply to any other equipment.
 
 .. note::
 
-    This book covers Python 3.10.
+    This book covers Python 3.12.
 
 `The book was written by Natasha Samoylenko <https://natenka.github.io/>`__. `Translated from Russian by Aidar Khairullin <https://www.linkedin.com/in/aidar-khairullin/>`__.
 
@@ -36,6 +36,7 @@ as an example, but of course they apply to any other equipment.
    book/Part_VII
    book/Part_VIII
    resources/README
+   GLOSSARY
    testimonials
 
 

@@ -16,7 +16,7 @@ elements using ``__getitem__`` (also by calling ``iter`` function).
             self.items = items
 
         def __getitem__(self, index):
-            print('Вызываю __getitem__')
+            print('Calling __getitem__')
             return self.items[index]
 
 
@@ -57,11 +57,11 @@ for values iteration:
             self.items = items
 
         def __getitem__(self, index):
-            print('Вызываю __getitem__')
+            print('Calling __getitem__')
             return self.items[index]
 
         def __iter__(self):
-            print('Вызываю __iter__')
+            print('Calling __iter__')
             return iter(self.items)
 
 
@@ -158,7 +158,7 @@ built-in function ``for`` (actually gititem are iterated over by iter function):
 
     def my_for(iterable):
         if getattr(iterable, "__iter__", None):
-            print('Есть __iter__')
+            print('Has __iter__')
             iterator = iter(iterable)
             while True:
                 try:
@@ -166,7 +166,7 @@ built-in function ``for`` (actually gititem are iterated over by iter function):
                 except StopIteration:
                     break
         elif getattr(iterable, "__getitem__", None):
-            print('Нет __iter__, но есть __getitem__')
+            print('No __iter__, but has __getitem__')
             index = 0
             while True:
                 try:
@@ -180,7 +180,7 @@ Check function on object that has ``__iter__``:
 .. code:: python
 
     In [18]: my_for([1, 2, 3, 4])
-    Есть __iter__
+    Has __iter__
     1
     2
     3
@@ -195,14 +195,14 @@ Check function on object that does not have ``__iter__`` but has ``__getitem__``
             self.items = items
 
         def __getitem__(self, index):
-            print('Вызываю __getitem__')
+            print('Calling __getitem__')
             return self.items[index]
 
 
     In [20]: iterable_1 = Items([1, 2, 3, 4, 5])
 
     In [21]: my_for(iterable_1)
-    Нет __iter__, но есть __getitem__
+    No __iter__, but has __getitem__
     Calling __getitem__
     1
     Calling __getitem__
@@ -258,11 +258,11 @@ Create an iterator from Network class:
             self._index = 0
 
         def __iter__(self):
-            print('Вызываю __iter__')
+            print('Calling __iter__')
             return self
 
         def __next__(self):
-            print('Вызываю __next__')
+            print('Calling __next__')
             if self._index < len(self.addresses):
                 current_address = self.addresses[self._index]
                 self._index += 1
