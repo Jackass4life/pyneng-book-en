@@ -125,7 +125,7 @@ In this case, you have to run tests from 09_functions directory:
     vagrant: [master|✔]
     $ pytest tests/test_task_9_1.py
     ========================= test session starts ==========================
-    platform linux -- Python 3.10.12, pytest-7.4.0, py-1.11.0, pluggy-1.2.0
+    platform linux -- Python 3.12.0, pytest-7.4.0, py-1.11.0, pluggy-1.2.0
     rootdir: /home/vagrant/repos/pyneng-7/pyneng-online-may-aug-2019/exercises/09_functions
     collected 3 items
 
