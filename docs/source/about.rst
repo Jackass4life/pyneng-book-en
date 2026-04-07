@@ -25,7 +25,7 @@ OS and Python requirements
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 All examples and terminal outputs in the book are shown on Debian Linux.
-Python 3.7 is used in this book but for the majority of examples Python 3.x
+Python 3.10 is used in this book but for the majority of examples Python 3.x
 will be enough. Only some examples requires Python version higher than 3.6.
 It always explicitly indicated and generally concerns some additional features.
 

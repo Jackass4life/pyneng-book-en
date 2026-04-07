@@ -29,9 +29,9 @@ After that, you can move to IPython as follows:
 ::
 
     $ ipython
-    Python 3.7.3 (default, May 13 2019, 15:44:23)
+    Python 3.10.12 (default, Nov  6 2023, 20:22:13)
     Type 'copyright', 'credits' or 'license' for more information
-    IPython 7.5.0 -- An enhanced Interactive Python. Type '?' for help.
+    IPython 8.12.0 -- An enhanced Interactive Python. Type '?' for help.
 
     In [1]:
 

@@ -13,7 +13,7 @@ In order to start working with Python, you need to decide on a few things:
 -  editor
 -  Python version
 
-This book uses Debian Linux (on other OS the output may differ slightly) and Python 3.7.
+This book uses Debian Linux (on other OS the output may differ slightly) and Python 3.10.
 
 
 .. toctree::
