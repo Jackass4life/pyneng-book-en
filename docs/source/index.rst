@@ -36,6 +36,7 @@ as an example, but of course they apply to any other equipment.
    book/Part_VII
    book/Part_VIII
    resources/README
+   GLOSSARY
    testimonials
 
 

@@ -125,7 +125,7 @@ they are in the correct config section):
      ip ospf hello-interval 1
 
 
-Задание 20.4
+Task 20.4
 ~~~~~~~~~~~~
 
 Create a template templates/add_vlan_to_switch.txt that will be used

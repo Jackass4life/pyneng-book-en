@@ -130,7 +130,7 @@ Courses
    - a very good course in Python. It's a great way to continue your study after
      book. In it you will repeat material on Python basics but from a different
      angle and learn a lot of new things. There's a lot of practical tasks and it's pretty intense.
--  `Python от Computer Science
+-  `Python by Computer Science
    Center <https://www.youtube.com/playlist?list=PLlb7e2G7aSpTTNp7HBYzCBByaE1h54ruW>`__
    - an excellent video lecture on Python. There are some basics and more advanced topics
 -  `Talk Python courses <https://training.talkpython.fm/courses/all>`__

@@ -15,7 +15,7 @@ There are several options for string formatting:
 
 * with operator ``%`` — older option
 * method ``format`` — relatively new option
-* f-строки — new option that appeared in Python 3.6
+* f-strings — new option that appeared in Python 3.6
 
 Although ``format`` is recommended, string formatting can often be found through  ``%``.
 

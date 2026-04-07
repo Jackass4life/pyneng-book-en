@@ -6,7 +6,7 @@ Documentation:
 -  `SQLite Tutorial <http://www.sqlitetutorial.net/>`__ - SQLite detailed description
 -  `Module documentation
    sqlite3 <https://docs.python.org/3/library/sqlite3.html>`__
--  `sqlite3 на сайте PyMOTW <https://pymotw.com/3/sqlite3/index.html>`__
+-  `sqlite3 on PyMOTW <https://pymotw.com/3/sqlite3/index.html>`__
 
 Articles:
 

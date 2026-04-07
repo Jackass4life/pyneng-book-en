@@ -179,7 +179,7 @@ try/except/finally
 Block ``finally`` is another optional block in ``try`` statement. It is *always* implemented, whether an exception has been raised or not.
 It's about actions that you have to do anyway. For example, it could be a file closing.
 
-File divide_ver4.py с блоком finally:
+File divide_ver4.py with finally block:
 
 .. code:: python
 

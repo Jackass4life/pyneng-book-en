@@ -39,7 +39,7 @@ generator expression
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Generator expression uses the same syntax as a list comprehensions, but returns
-iterator, not list (notе the parentheses instead of the square brackets):
+iterator, not list (note the parentheses instead of the square brackets):
 
 .. code:: python
 
