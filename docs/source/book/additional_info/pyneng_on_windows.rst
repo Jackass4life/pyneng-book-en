@@ -12,7 +12,7 @@ In order to do tasks on Windows, you need to install Python and Cmder.
 Installing Python 3.12
 ---------------------
 
-Download and install `Python 3.12 <https://www.python.org/downloads/release/python-31012/>`__.
+Download and install `Python 3.12 <https://www.python.org/downloads/release/python-3120/>`__.
 Be sure to check the "Add Python 3.12 to PATH" checkbox.
 
 After installation, check:
